@@ -1,38 +1,319 @@
-.App {
+body{
+  background: rgba(0, 0, 0, 0.9);
+
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header::after{
+  background-color: rgba(0, 0, 0, 0.9);
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url("/web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+
+
+.header-content{
+  position: absolute; /* para poder ficar um em cima do outro */
+  z-index: 1; /* elementos passarem para a frente do fundo */
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
   text-align: center;
+  width: 684px;
+  height: 110px;
+  transition: all 23ms;
+  transform: translate(-50%, -50%) 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-content .logo{
+  height: 110px;
+  width: 684px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+ font-family: 'Oswald', sans-serif; 
+ font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text{
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.container{
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.grid-5{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.text-center{
+  text-align: center;
+  margin: auto;
+}
+
+.collections{
+  padding-right: 10px;
+}
+
+.collections .to {
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to .subT{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color ease-out;
+  transition: color 2s ease-out;
+}
+
+.collections .to .subB{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color ease-out;
+  transition: color 2s ease-out;
+}
+
+.collections .to:hover .subT{
+  color: black;
+}
+
+.collections .to:hover .subB{
+  color: red;
+}
+
+.collections .to .mutT{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color ease-out;
+  transition: color 2s ease-out;
+}
+
+.collections .to .mutB{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to:hover .mutT{
+  color: white;
+  text-shadow: 2px 2px 5px white;
+}
+
+.collections .to:hover .mutB{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.collections .to .subT{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.collections .to .subB{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to:hover .subT{
+  color: white;
+  text-shadow: 2px 2px 5px red;
+}
+
+.collections .to:hover .subB{
+  color: white;
+}
+
+.collections .to .infT{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to .infB{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to:hover .infT{
+  color: white;
+  text-shadow: 2px 2px 5px orange;
+}
+
+.collections .to:hover .infB{
+  color: white;
+}
+.collections .to .voiT{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to .voiB{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to:hover .voiT{
+  color: white;
+  text-shadow: 2px 2px 5px #ff33cc;
+}
+
+.collections .to:hover .voiB{
+  color: white;
+}
+
+.collections .to .shaT{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to .shaB{
+  text-decoration: none;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.collections .to:hover .shaT{
+  color: white;
+  text-shadow: 2px 2px 5px yellow;
+}
+
+.collections .to:hover .shaB{
+  color: white;
+}
+
+.colNameFont{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: xx-large;
+  margin-bottom: 0;
+}
+
+.collectionFont{
+  margin:0;
+  font-size: 12px;
+}
+
+.about{
+  padding-right: 10px;
+}
+
+footer {
+padding: 2.2rem;
+}
+
+footer p {
+margin: 0;
+}  
+
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+
+.bg-dark {
+  background: rgba(0, 0, 0, 0.9);;
+  color: #f4f4f4;
+}
+
+.container h3{
+  margin: 0;
+}
+.container h5{
+  margin: 0;
+}
+
+.container .pTop{
+  margin: 0;
+  font-size: xx-large;
+}
+
+.container .pBottom{
+  margin: 0;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.container .logo-about{
+  width: 150px;
+  height: 147px;
+}
+
+
+@media(max-width: 680px){
+
+.header::after{
+      height: 100vh;
+      max-width: 680px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-content{
+      top:10%;
+      margin-top: 150px;
+      bottom: 50%;
+      max-width: 340px;
+      height: 61px;
+
+  }
+
+  .header-content .logo{
+      height: 55px;
+      width: 320px;
+  }
+
+  .grid-5 {
+      grid-template-columns: 1fr 1fr ;
+  }
+
+  .collections{
+      padding: 1rem 1rem;
+
+  }
+  .grid-3, .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+}
+
+@media(max-height:500px){
+  .header-content .logo{
+      height: 55px;
+      width: 320px;
   }
 }
