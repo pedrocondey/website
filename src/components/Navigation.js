@@ -7,7 +7,7 @@ export default class Navigation extends Component {
         return (
             <div>
                 <nav className="navbar navbar-light bg-white">
-                    <Link className="navbar-brand" to="/">
+                    <Link className="navbar-brand" to="/website">
                         <img src={logoNav} width="30" height="30" alt="" />
                     </Link>
                     <span class="navbar-text">
