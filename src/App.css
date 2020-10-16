@@ -31,7 +31,7 @@ body{
   text-align: center;
   width: 684px;
   height: 110px;
-  transition: all 23ms;
+  transition: all 10ms;
   transform: translate(-50%, -50%) 
 }
 

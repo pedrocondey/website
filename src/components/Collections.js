@@ -15,25 +15,25 @@ export default class Collections extends Component {
                         </Link>
                     </div>
                     <div>
-                        <Link to="/collections" className="to">
-                            <p className="pTop mutT"><strong>MUTU</strong></p>
+                        <Link to="/muto" className="to">
+                            <p className="pTop mutT"><strong>MUTO</strong></p>
                             <p className="pBottom mutB">SS19</p>
                         </Link>
                     </div>
                     <div>
-                        <Link to="/collections" className="to">
+                        <Link to="/informis" className="to">
                             <p className="pTop infT"><strong>INFORMIS</strong></p>
                             <p className="pBottom infB">FW1920</p>
                         </Link>
                     </div>
                     <div>
-                        <Link to="/collections" className="to">
+                        <Link to="/voice" className="to">
                             <p className="pTop voiT"><strong>VOICE</strong></p>
                             <p className="pBottom voiB">SS20</p>
                         </Link>
                     </div>
                     <div>
-                        <Link to="/collections" className="to">
+                        <Link to="/shadow" className="to">
                             <p className="pTop shaT"><strong>SHADOW</strong></p>
                             <p className="pBottom shaB">FW2021</p>
                         </Link>

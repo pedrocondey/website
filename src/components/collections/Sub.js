@@ -9,17 +9,22 @@ import photo6 from '../../images/maria meira 06.jpg'
 
 
 export default class Sub extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
     render() {
         return (
             <div>
                 <Navbar />
                 <div className="container">
                     <div className="row justify-content-start">
-                        <div className="col-sm-4 bg-light">
-                            <div className="text-left my-2 align-center">
-                                <p className="colNameFont"><strong>#sub</strong></p>
-                                <p className="collectionFont black text-justify ">This collection aims to tell a very concrete story of change and transformation in an abstract way. It symbolizes the passage from a negative moment to a positive one, through the use of black and white. Persuiting an ideia first used on a previous collection, a new word is highlighted and repeated throughout all the pieces. A word that summarizes the whole concept: MUTO.
-The inspiration in terms of expression came from the artist Yellin, who works with deformed bodies made of synthetic leather, a material also used in this collection. These deliberately distorted and ambiguous forms are used in the collection in order to extrapolate the volume and create movement.</p>
+                        <div className="col-sm-4 bg-light ">
+                            <div className="text-left my-2 mt-5 mb-5 ">
+                                <p className="colNameFont text-right"><strong>sub</strong></p>
+                                <p className="collectionFont black text-justify align-middle">My collection is minimalist, inspired by Shari langen, an artist who transforms the human body in a performative and intuitive way, by doing experiences and using different and odd materials. Through his work I found the sculptor Lucy Glenndinning, who develops different aesthetic expressions, being her main focus the human body has a semiotic.
+The mains concept of my collection is the feminine body. I chose to create light pieces, transparent, ethereal, that were capable to transmit purity, something between a naive and embarrassed way of being.</p>
                             </div>
                         </div>
                         <div className="col-sm-8 bg-light">
