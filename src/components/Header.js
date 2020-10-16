@@ -7,7 +7,7 @@ export default class Header extends Component {
         return (
                 <header className="header" >
                     <div className="header-content animated fadeIn delay-1s">
-                        <img className="logo" src={logo} srcSet={logobig + ' 2000w'} alt="MM Logo" />
+                        <img className="logo" src={logo} srcSet={logobig + ' 2000w'}  />
                     </div>
                 </header>
         )
