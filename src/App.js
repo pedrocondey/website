@@ -23,9 +23,9 @@ function App() {
     <Route path="/informis" exact component={Informis}/>
     <Route path="/muto" exact component={Muto}/>
     <Route path="/voice" exact component={Voice}/>
-    <Route path="/" exact component={Header} />
-    <Route path="/" exact component={Collections} />
-    <Route path="/" exact component={About} />
+    <Route path="/website" exact component={Header} />
+    <Route path="/website" exact component={Collections} />
+    <Route path="/website" exact component={About} />
 
 
     </Router>
